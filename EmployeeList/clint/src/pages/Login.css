@@ -1,3 +1,4 @@
+/* Container for the login page */
 .login {
     background-color: #ffe4c480;
     width: 100%;
@@ -5,28 +6,96 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
-.card{
-    display: grid;
-    row-gap: 46px;
+
+.login.bg-changed {
+    background-color: #ffcc99; /* A slightly different shade on click */
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 300px;
-    height: 430px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background: linear-gradient(#fce1c3, white);
+    background: linear-gradient(145deg, #fce1c3, #fff);
+    transition: transform 0.3s ease;
 }
-.LoginHeader{
-    text-align: center;
-    font-size: large;
+
+.card:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Login header styling */
+.LoginHeader {
+    text-decoration: underline;
+    font-size: 1.5em;
     font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
 }
-.LoginButton{
+
+/* Label and input field styling */
+.card label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
     width: 100%;
-    background-color: #fce1c3;
-    border: none; 
-    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    transition: border-color 0.3s;
 }
-.card label{
-    font-size: large;
+
+.card input[type="text"]:focus,
+.card input[type="password"]:focus {
+    border-color: #ff9e7c;
+    outline: none;
+}
+
+/* Login button styling */
+.LoginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #fce1c3;
+    color: #333;
+    font-size: 1em;
     font-weight: bold;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.LoginButton:hover {
+    background-color: #ff9e7c;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .LoginHeader {
+        font-size: 1.3em;
+    }
+
+    .card label,
+    .card input,
+    .LoginButton {
+        font-size: 1em;
+    }
 }
