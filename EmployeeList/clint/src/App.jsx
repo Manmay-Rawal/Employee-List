@@ -1,13 +1,14 @@
-import Home from './pages/Home.jsx'
-import Login from './pages/Login.jsx'
-// import './App.css'
+import React from "react"
+import { RouterProvider} from "react-router-dom"
+import {router} from "./router.jsx"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
 
   return (
     <>
-      <Home/>
-      <Login/>
+      <RouterProvider router={router} />
     </>
   )
 }

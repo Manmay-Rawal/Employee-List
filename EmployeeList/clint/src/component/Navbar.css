@@ -1,0 +1,51 @@
+.container-Navbar{
+    color: #fff;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
+    background-color: #fff;
+
+}
+.NavText{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 44px;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+.NavText:hover{
+    color: rgb(103, 97, 97);
+    border-radius: 10px;
+}
+.download-logo{
+    float: left;
+    height: 60px;
+    width: 65px;
+}
+.download-logo{
+    background-image: url(../images/LOGO.jpg);
+    background-size: 74px 66px;
+}
+.Search-Bar{
+    width: 320px;
+    height: 30px;
+    margin-left: 30px;
+}
+.search{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.NavText-login{
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+    background-color: #fff;
+}
